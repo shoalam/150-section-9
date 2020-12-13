@@ -1,0 +1,117 @@
+
+/*General Styling*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Yantramanav';
+  background: #F1F1F1;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, li{
+  list-style: none;
+}
+
+button:focus{
+  outline: none;
+}
+
+/*testimonial-section*/
+
+.testimonial-section{
+    padding: 50px 0;
+}
+
+.section-title
+ {
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #2a2a2a;
+    position: relative;
+    display: inline-block;
+}
+
+.section-borders span{
+    width: 30px;
+    height: 3px;
+    background: #6AAF08;
+    text-align: center;
+    display: inline-block;
+}
+.section-borders .black-border{
+    width: 20px;
+    background: #333;
+}
+
+.single-testimonial-item{
+    box-shadow: 0 0 4px #ddd;
+    border: 1px solid #e3e5e1;
+    margin: 2px;
+    padding: 20px;
+    position: relative;
+    padding-left: 80px;
+}
+.single-testimonial-item:before{
+    font-family: fontAwesome; 
+    content:"\f10e";
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    line-height: 30px;
+    margin-top: -15px;
+    color: #6AAF08;
+}
+
+.single-testimonial-item:after{
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 60px;
+    width: 1px;
+    height: 70%;
+    background: #ddd;
+}
+.single-testimonial-item p{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #a9a9a9;
+}
+.single-testimonial-item h3{
+    color: #292929;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.single-testimonial-item h3 span{
+    display: block;
+    color: #a9a9a9;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.client-testimonial-carousel.owl-theme .owl-dots button.owl-dot span{
+    height: 5px;
+    width: 20px;
+    background: #6AAF08;
+     transition: 0.3s;
+}
+
+.client-testimonial-carousel.owl-theme .owl-dots .owl-dot.active span{
+    height: 5px;
+    width: 30px;
+    background: #333;
+    transition: 0.3s;
+}
